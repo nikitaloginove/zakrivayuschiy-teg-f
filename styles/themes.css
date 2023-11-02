@@ -4,3 +4,55 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'Press Start 2P';
+    --main-font-weight: 400;
+    --title-font-weight: 700;
+    --background-color: #fff;
+    --accent-color: #000;
+    --background-image: repeating-linear-gradient(to left, #d3d3d3, rgb(211 211 211 / 0) 2px),
+                        repeating-linear-gradient(to top, #d3d3d3, rgb(211 211 211 / 0) 2px),
+                        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+:root.theme-dark {
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'Press Start 2P';
+    --main-font-weight: 465;
+    --title-font-weight: 785;
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --background-image: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px),
+                        repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px),
+                        linear-gradient(to bottom, #007f0c 0, #004306 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-font: 'Inter-Variable', sans-serif;
+        --accent-font: 'Press Start 2P';
+        --main-font-weight: 465;
+        --title-font-weight: 785;
+        --background-color: #000;
+        --accent-color: #00CC14;
+        --background-image: repeating-linear-gradient(to left, #000, rgb(0 0 0 / 0) 2px),
+                            repeating-linear-gradient(to top, #000, rgb(0 0 0 / 0) 2px),
+                            linear-gradient(to bottom, #007f0c 0, #004306 100%);
+    }
+
+}
+
+.theme-dark .button__text {
+    color: var(--accent-color);
+    position: relative;  
+    mix-blend-mode: difference;
+}
+
+.theme-dark .footer-floppy {
+    fill: var(--accent-color);
+    mix-blend-mode: difference;
+    position: relative;
+}
+
