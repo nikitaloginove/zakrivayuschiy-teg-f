@@ -19,8 +19,8 @@
   <body class="page">
     <header class="header">
       <div class="header-content">
-        <h1 class="header-logo">&lt;/html&gt;</h1>
-        <h2 class="header-title">закрывающий тег</h2>
+        <a class="header-logo">&lt;/html&gt;</a>
+        <h1 class="header-title">закрывающий тег</h1>
         <nav class="theme-menu header__theme-menu">
           <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
           <ul class="theme-menu__list">
@@ -53,7 +53,7 @@
         <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
         <div class="image-content">
           <img 
-          src="/images/student.jpg"
+          src="./images/student.jpg"
           alt="Фото оленя в траве"
           class="image start"
           loading="lazy"
@@ -87,7 +87,7 @@
         <h2 class="card-title">1 спринт: Я — чистый лист</h2>
         <div class="image-content">
           <img 
-          src="/images/first-steps.jpg"
+          src="./images/first-steps.jpg"
           alt="Ленивец на дереве"
           class="image steps"
           loading="lazy"
@@ -122,7 +122,7 @@
         <h2 class="card-title">1 спринт: А если не получится?</h2>
         <div class="image-content">
           <img 
-          src="/images/study.jpg"
+          src="./images/study.jpg"
           alt="Лев"
           class="image study"
           loading="lazy"
@@ -158,7 +158,7 @@
         <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
         <div class="image-content">
           <img 
-          src="/images/build.jpg"
+          src="./images/build.jpg"
           alt="Муравей с листочком"
           class="image beauty"
           loading="lazy"
@@ -191,7 +191,7 @@
         <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
         <div class="image-content">
           <img 
-          src="/images/care.jpg"
+          src="./images/care.jpg"
           alt="Семья обезьянок"
           class="image care"
           loading="lazy"
@@ -226,7 +226,7 @@
         <h2 class="card-title">3 спринт: Обходные стратегии</h2>
         <div class="image-content">
           <img 
-          src="/images/solution.jpg"
+          src="./images/solution.jpg"
           alt="Думающая обезьянка"
           class="image solution"
           loading="lazy"
@@ -261,7 +261,7 @@
         <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
         <div class="image-content">
           <img 
-          src="/images/concentration.jpg"
+          src="./images/concentration.jpg"
           alt="Сосредоточенный орел"
           class="image concentration"
           loading="lazy"
@@ -297,7 +297,7 @@
         <h2 class="card-title">«Сейчас я здесь»</h2>
         <div class="image-content">
           <img 
-          src="/images/future.jpg"
+          src="./images/future.jpg"
           alt="Белый медведь машет лапой"
           class="image future"
           loading="lazy"
@@ -343,7 +343,9 @@
         <use href="svg/floppy2.svg#floppy-2">
       </svg>
       <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-      <button type="button" class="close-button" onclick="window['dialog-id'].close()"><span class="button__text">ок</span></button>
+      <form method="dialog">
+        <button type="submit" class="close-button"><span class="button__text">ок</span></button>
+      </form>   
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>  

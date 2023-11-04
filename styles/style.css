@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
   grid-row: 2/3;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   border: 2px solid var(--accent-color);
   gap: 20px;
@@ -112,8 +112,7 @@
 .theme-menu__button:hover {
   opacity: 0.6;
   cursor: pointer;
-  transition-duration: 0.3s;
-  transition-timing-funсtion: ease;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -142,8 +141,7 @@
 .main-content {
   display: grid;
   gap: 50px;
-  background-color: var(--background-color);
-  margin-block-start: 102px; background: var(--background-color);
+  margin-block-start: 102px; 
   max-width: 100%;  
 }
 
@@ -154,6 +152,7 @@
   border: 2px solid var(--accent-color);
   max-width: 100%;
   position: relative;
+  background-color: var(--background-color);
 }
 
 .card-title {
@@ -183,7 +182,7 @@
   inset-block-start: 25px;
   inset-inline-end: 11px;
   color: var(--accent-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-shadow: 1px var(--background-color);
   mix-blend-mode: hard-light;
@@ -237,7 +236,6 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  max-width:;
   text-align: start;
   font-size: 18px;
   line-height: 21px; 
@@ -381,7 +379,7 @@ svg:active .main-body {
 }
 
 .button__text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   line-height: 90%;
   font-size: 14px;
   position: relative;
@@ -456,7 +454,7 @@ svg:active .main-body {
 .dialog {  
   max-width: 341px;
   max-height: 195px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   padding: 32px 42px;  
   overflow: visible;
@@ -501,7 +499,9 @@ svg:active .main-body {
   border-color: transparent;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
-  position: relative;  
+  position: relative; 
+  min-width: 257px;
+  min-height: 38px;
 }
 
 .close-button:focus {
@@ -536,13 +536,8 @@ svg:active .main-body {
 }
 
 @media (width > 376px) {
-  .header {
-    min-width: 700px;
-    justify-self: center;
-  }
 
-  .header-content {
-    min-width: 700px;
+  .header-content {    
     min-height: 368px;
     padding-block-start: 106px; 
   }
@@ -572,11 +567,6 @@ svg:active .main-body {
     min-height: 55px;
   }
 
-  .footer {
-    min-width: 700px;
-    justify-self: center;
-  }
-
   .footer-floppy {
     max-width: 21px;
     max-height: 21px;
@@ -591,6 +581,19 @@ svg:active .main-body {
 
   .close-button {
     min-width: 293px;
+  }
+}
+
+@media (width > 700px) {
+  
+  .header-content {
+    min-width: 700px;
+    justify-self: center;
+  }
+
+  .footer {
+    min-width: 700px;
+    justify-self: center;
   }
 }
 

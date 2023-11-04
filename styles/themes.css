@@ -32,7 +32,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --main-font: 'Inter-Variable', sans-serif;
-        --accent-font: 'Press Start 2P';
+        --accent-font: 'Press Start 2P', fantasy;
         --main-font-weight: 465;
         --title-font-weight: 785;
         --background-color: #000;
@@ -42,6 +42,17 @@
                             linear-gradient(to bottom, #007f0c 0, #004306 100%);
     }
 
+    .theme-auto .button__text {
+        color: var(--accent-color);
+        position: relative;  
+        mix-blend-mode: difference;
+    }
+    
+    .theme-auto .footer-floppy {
+        fill: var(--accent-color);
+        mix-blend-mode: difference;
+        position: relative;
+    }
 }
 
 .theme-dark .button__text {

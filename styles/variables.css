@@ -2,7 +2,7 @@
 
 :root {
     --main-font: 'Inter-Variable', sans-serif;
-    --accent-font: 'Press Start 2P';
+    --accent-font: 'Press Start 2P', fantasy;
     --main-font-weight: 400;
     --title-font-weight: 700;
     --background-color: #fff;
