@@ -32,7 +32,6 @@
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-width: 100vw;
   padding-block-start: 102px; 
 }
 
@@ -61,7 +60,9 @@
 }
 
 .theme-menu {
-  margin-block-start: 5px; margin-inline-start: 5px; max-width: 84px;
+  margin-block-start: 5px; 
+  margin-inline-start: 5px; 
+  max-width: 84px;
   max-height: 70px;  
   font-size: 14px;
   font-style: normal;
@@ -391,7 +392,6 @@ svg:active .main-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-color);
 }
 
 .footer-items {
@@ -410,6 +410,7 @@ svg:active .main-body {
   border: 2px solid var(--accent-color);
   gap: 8px;
   position: relative;
+  background-color: var(--background-color);
 }
 
 .save:focus {
